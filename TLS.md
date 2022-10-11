@@ -132,15 +132,17 @@ systemctl stop firewalld.service
 
 #### ECC 证书
 
-将证书和密钥安装到 /etc/v2ray 中：
+将证书和密钥安装到项目的根目录的 nginx/certs/ 中：
 ```
-$ sudo ~/.acme.sh/acme.sh --installcert -d mydomain.me --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key --ecc
+$ cd nginx/certs
+$ sudo ~/.acme.sh/acme.sh --installcert -d mydomain.me --fullchainpath nginx/certs/v2ray.crt --keypath nginx/certs/v2ray.key --ecc
 ```
 
 #### RSA 证书
 
 ```
-$ sudo ~/.acme.sh/acme.sh --installcert -d mydomain.me --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key
+$ cd nginx/certs
+$ sudo ~/.acme.sh/acme.sh --installcert -d mydomain.me --fullchainpath nginx/certs/v2ray.crt --keypath nginx/certs/v2ray.key
 ```
 
 **注意：无论什么情况，密钥(即上面的v2ray.key)都不能泄漏，如果你不幸泄漏了密钥，可以使用 acme.sh 将原证书吊销，再生成新的证书，吊销方法请自行参考 acme.sh 的手册**
