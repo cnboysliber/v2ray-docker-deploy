@@ -55,6 +55,11 @@ no crontab for user
 ```
 安装成功后执行 `source ~/.bashrc` 以确保脚本所设置的命令别名生效。
 
+设置证书的默认类型
+```
+sudo /root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
+```
+
 如果安装报错，那么可能是因为系统缺少 acme.sh 所需要的依赖项，acme.sh 的依赖项主要是 netcat(nc)，我们通过以下命令来安装这些依赖项，然后重新安装一遍 acme.sh:
 
 ```
