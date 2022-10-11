@@ -5,6 +5,23 @@
 
 2. 准备一个域名，免费域名经测试申请不了了，所以花点小钱买一个，然后把 A 记录解析改为你服务器 ip。
 
+3. docker 安装：
+```
+curl -sSL https://get.daocloud.io/docker | sh
+```
+ 如果要卸载老的版本：
+  ```
+  sudo yum remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-engine
+  ```
+ 
+
 ### 服务端
 1. 使用 [GGUID](https://www.guidgen.com/) 生成一个 ID 标识，然后打开 `./v2ray/config.json` 文件，修改[第 9 行](https://github.com/wubaiqing/v2ray-docker-compose/blob/master/v2ray/config.json#L9)的 ID 标识；
 
@@ -15,6 +32,7 @@
 3. 修改 `./nginx/conf.d/v2ray.conf` [第 8 行](https://github.com/wubaiqing/v2ray-docker-compose/blob/master/nginx/conf.d/v2ray.conf#L8) 的域名地址。
 
 4. 启动临时服务测试一下：`docker-compose up`，如果测试没问题，把这服务关了，执行这个开启服务：`docker-compose up -d`
+
 
 ### 客户端
 1. 从 [神一样的工具们](https://www.v2ray.com/awesome/tools.html) 下载当前环境的客户端；
