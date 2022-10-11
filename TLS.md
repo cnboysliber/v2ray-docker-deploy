@@ -121,6 +121,11 @@ $ sudo ~/.acme.sh/acme.sh --renew -d mydomain.com --force --ecc
 $ sudo ~/.acme.sh/acme.sh --renew -d mydomain.com --force
 ```
 
+关闭防火墙
+```
+systemctl stop firewalld.service
+```
+
 **由于本例中将证书生成到 `/etc/v2ray/` 文件夹，更新证书之后还得把新证书生成到 /etc/v2ray。**
 
 ### 安装证书和密钥
