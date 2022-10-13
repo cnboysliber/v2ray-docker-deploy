@@ -2,11 +2,9 @@
 
 ### 准备工作（适用于新服务器）
 1. 一个干净的服务器是缺少一些工具的，需要自己装一下，比如：wget、git、docker、docker-compose 这些（具体咋装软件如有需要再补充吧），安装好后，克隆本项目，再把 docker 服务开起来；
-#### [服务器申请](https://www.vultr.com/?ref=7573170), 注册一个账号后即可购买，一个月最便宜(纽约的服务器)是3.5美元，可以多人共用，还是很划算的，如果想网络更快，可以购买新加坡或者其他亚洲地区的，最便宜是5美元：
-  ![my vultr com_deploy_](https://user-images.githubusercontent.com/31284807/195545781-f0fa3361-5c53-4be8-aefb-e6057694765d.png)
+#### [服务器申请](https://www.vultr.com/?ref=7573170), 注册一个账号后即可购买，一个月最便宜(纽约的服务器)是3.5美元，可以多人共用，还是很划算的，如果想网络更快，可以购买新加坡或者其他亚洲地区的，最便宜是5美元，可以支付宝直接充值，服务器申请后可以随时销毁，实际是按小时计费的，所以不想用时可以销毁，用的时候再部署就可以了，很方便
   
-
-2. 准备一个域名，[免费域名](https://my.freenom.com/clientarea.php)经测试申请不了了，所以花点小钱买一个，然后把 A 记录解析改为你服务器 ip。
+2. 准备一个域名，[免费域名](https://my.freenom.com/clientarea.php), 每次申请一个域名免费时间为12个月，可以到期后再重新申请一个就好，然后把 A 记录解析改为你服务器 ip。
 
 3. 服务器免费证书安装，可以使用[acme.sh脚本](https://github.com/chengboliber/v2ray-docker-deploy/blob/master/TLS.md)
 
