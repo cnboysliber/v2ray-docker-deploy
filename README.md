@@ -12,6 +12,19 @@
 4. docker 安装：
 ```
 curl -sSL https://get.daocloud.io/docker | sh
+
+# yum 安装
+
+sudo yum install -y yum-utils \
+  device-mapper-persistent-data \
+  lvm2
+  
+ sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+    
+ sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+  
 ```
  如果要卸载老的版本：
   ```
