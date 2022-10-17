@@ -45,6 +45,9 @@ sudo yum install -y yum-utils \
  
  #执行下面命令：
  sudo yum erase podman buildah
+ 
+ #安装docker-compose
+ yum install -y docker-compose
   ```
  
 
