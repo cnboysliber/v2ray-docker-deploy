@@ -37,6 +37,15 @@ sudo yum install -y yum-utils \
                   docker-logrotate \
                   docker-engine
   ```
+  
+  如果遇到报错如下：
+  ```
+  Error: 
+ Problem 1: problem with installed package podman
+ 
+ #执行下面命令：
+ sudo yum erase podman buildah
+  ```
  
 
 ### 服务端
