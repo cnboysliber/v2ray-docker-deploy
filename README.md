@@ -73,3 +73,13 @@ sudo yum install -y yum-utils \
 GGUID 生成器：https://www.guidgen.com/  
 免费域名：https://www.freenom.com/zh/freeandpaiddomains.html  
 acme.sh：https://github.com/chengboliber/v2ray-docker-deploy/blob/master/TLS.md
+
+### 加速配置
+一键加速VPS服务器（五合一的TCP网络加速脚本）
+五合一的TCP网络加速脚本，包括了BBR原版、BBR魔改版、暴力BBR魔改版、BBR plus（首选）、Lotsever(锐速)安装脚本。可用于KVMXen架构，不兼容OpenVZ（OVZ）。支持Centos 6+ / Debian 7+ / Ubuntu 14+，BBR魔改版不支持Debian 8。
+
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
+
+chmod +x tcp.sh
+
+./tcp.sh
