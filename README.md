@@ -72,7 +72,7 @@ sudo yum install -y yum-utils \
 ### 资源
 GGUID 生成器：https://www.guidgen.com/  
 免费域名：https://www.freenom.com/zh/freeandpaiddomains.html  
-acme.sh：https://github.com/chengboliber/v2ray-docker-deploy/blob/master/TLS.md
+acme.sh：https://github.com/cnboysliber/v2ray-docker-deploy/blob/master/TLS.md
 
 ### 加速配置
 一键加速VPS服务器（五合一的TCP网络加速脚本）
