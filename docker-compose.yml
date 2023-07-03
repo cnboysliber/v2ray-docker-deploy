@@ -11,6 +11,7 @@ services:
       - v2ray
     volumes:
       - ./v2ray:/etc/v2ray
+    entrypoint: ["/usr/bin/v2ray","run", "-config=/etc/v2ray/config.json"]
 
   nginx:
     image: nginx:alpine
